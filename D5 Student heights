@@ -1,0 +1,14 @@
+student_heights = input("Enter a list of student heights. ").split() 
+total_height = 0
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+    # change to float
+    #  student_heights[n] = float(student_heights)
+    # add up total height
+    total_height = total_height + student_heights[n]
+# ave height
+ave_height = total_height / len(student_heights)
+ave_height = round(ave_height)
+# to 2 dps - answer = str(round(answer, 2)) 
+print(f"Average height is {ave_height}.")
+

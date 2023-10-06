@@ -1,0 +1,4 @@
+# Quiz game, use D17_Data 
+from D17_Data import question_data
+# question data is a list of dictionaries 
+print(question_data)

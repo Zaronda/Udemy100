@@ -1,0 +1,16 @@
+import random
+
+#split string method
+name_string = input('Give me everybody"s names, separated by a comma. ')
+names = name_string.split(", ")
+
+# print(names)
+no_people = len(names)
+# list starts from 0
+no_people -= 1
+# print(no_people)
+# get random number from 1 to number of people
+lucky_person = random.randint(1, no_people)
+#get name relating to random number
+
+print(f"The bill must be paid by {names[lucky_person]}.")

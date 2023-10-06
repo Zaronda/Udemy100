@@ -1,0 +1,14 @@
+# file = open("D24_My_File.txt")
+# open using "with" to avoid having to close the file
+# default mode is Read
+with open("D24_My_File.txt") as file:
+    contents = file.read()
+    print(contents)
+# file.close()
+
+# open file with write mode, will overwrite contents
+#with open("D24_My_File.txt", mode="w") as file:
+# a is Append, add to file
+with open("D24_My_File.txt", mode="a") as file:
+    file.write("I like chocolate.")
+

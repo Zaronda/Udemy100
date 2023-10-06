@@ -1,0 +1,18 @@
+weight = float(input("What is your weight in kilograms? "))
+height = float(input("What is your height in meters? "))
+# calculate BMI
+bmi = weight / (height * height)
+# change BMI to number with 1 dp
+bmi = float(round(bmi, 1))
+
+# identify advice
+if bmi < 19.5:
+    print(f"Your BMI is {bmi}. You are slighty underweight.")
+elif bmi <= 25:
+    print (f"Your BMI is {bmi}. You are a normal weight. ")
+elif bmi <= 30:
+    print(f" Your BMI is {bmi}. You are slightly overweight.")
+elif bmi <= 35:
+    print(f"Your BMI is {bmi}. You are obese.")
+else:
+    print (f"Your BMI is {bmi}. You are clinically obese.")

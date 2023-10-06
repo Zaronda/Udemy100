@@ -1,0 +1,7 @@
+# add even numbers from 2 to 100
+total = 0
+# loop to 100 (101 to get 100 included) step of 2 to pick up only even numbers
+for number in range(0, 101, 2):
+    total =  total + number
+
+print(f"Total of even numbers {total}")

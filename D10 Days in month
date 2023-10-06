@@ -1,0 +1,32 @@
+# year = int(input("Which year do you want to check? "))
+def is_leap(year):
+    leap_year=False
+    remainder = year % 4
+    
+    if remainder == 0:
+        leap_year = True
+        remainder = year % 100
+        if remainder == 0:
+            return False
+            remainder = year % 400
+            if remainder == 0:
+                return True
+
+    return leap_year
+
+month_days = []
+
+def days_in_month(year, month):
+    """ return the number of days in a month"""
+    month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    ly = is_leap(year)
+#    print(f"Debug 1:  Year is: {year}, month is {month}, ly={ly}")
+    if is_leap(year) and month == 2:
+        return 29
+    return month_days[month -1]
+
+
+year = int(input("Enter a year: "))
+month = int(input("Enter a month: "))
+days = days_in_month(year, month)
+print(days)

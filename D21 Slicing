@@ -1,0 +1,13 @@
+piano_keys = ["a", "b", "c", "d", "e", "f", "g"]
+piano_tuple = ("do", "re", "me", "fa", "so", "la", "te")
+# slice from just before position 2 to position 5
+print(piano_keys[2:5])
+# slice from position 2 to end
+print(piano_keys[2:])
+# slice from start to position 5
+print(piano_keys[:5])
+# slice from 2 to position 5, increments of 2
+print(piano_keys[2:5:2])
+# reverse using minus number
+print(piano_keys[::-1])
+print(piano_tuple[2:5])

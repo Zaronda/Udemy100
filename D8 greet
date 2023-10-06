@@ -1,0 +1,17 @@
+#def greet():
+#    print("Hello.\n")
+#    user_name = input("Tell me your name. ")
+#    print(f"Hello, {user_name}.")
+  
+# call greet function
+#greet()
+
+def greet_with(name, location):
+    print(f"Hello {name}")
+    print(f"What is it like in {location}?")
+
+# positional arguments
+greet_with("Eleanor", "Bedroom")
+
+# keyword arguments
+greet_with(location="Home", name="Alaca")

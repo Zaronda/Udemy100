@@ -1,0 +1,53 @@
+# Not complete
+from D12_Logo_art import logo
+from  random import randint
+# choose random number function
+global number
+guesses_remaining = 0
+current_guess = 0
+
+def random_number():
+    number = randint(1, 100)
+    return number
+
+# process guess function
+def process_guess(guess):
+    if guess == number:
+        print("Correct! You win.")
+        end_of_game == True
+    elif guess > number:
+        print("Too high. Guess again.")
+    else:
+        print("Too low. Guess again.")
+    
+
+# Continue until a correct guess or out of trys
+end_of_game = False
+
+while not end_of_game:
+# display logo and introduction
+    print(f"{logo}")
+    print("Welcome to Guess The Number. ")
+    print("I'm thinking of a number between 1 and 100.")
+    difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
+    if difficulty == "easy":
+        guesses = 10
+    else:
+        guesses = 5
+
+    # loop for number of guesses
+    current_guess = 0
+    print(f"current guess {current_guess}  guesses remaining {guesses_remaining}   guesses {guesses}")
+    for current_guess in range(guesses):
+        guesses_remaining = guesses - current_guess
+
+    # ask for guess
+        for current_guess in range(guesses):
+            print(f"You have {guesses_remaining} attemps remaining to guess the number.")
+            guess = input("Make a guess: ")
+            process_guess(guess)
+
+    # reduce guess count
+            guesses_remaining -= 1
+
+    

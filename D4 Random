@@ -1,0 +1,14 @@
+import random
+
+
+random_interger = random.randint(1, 100)
+print(random_interger)
+
+# 0.000000 to 0.99999999...
+random_float = random.random()
+# 0.0000 to 9.9999
+random_float = random_float * random_interger
+print(random_float)
+
+love_score = random_interger
+print(f"Your love score is {love_score}.")

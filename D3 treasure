@@ -1,0 +1,15 @@
+# treasure hunt game
+print("Welcome to treasue hunt")
+direction = input("You approach a hill. Do you go left or right? ").lower()
+if direction == "left":
+    print("You are eaten by a lion. Game over.")
+else:
+    lake = input("You arrive at a lake. Do you take a boat or swim? ").lower()
+    if lake == "swim":
+        print("You are eaten by an alligator. Game over.")
+    else:
+        door = input("You find three doors. Red, Yellow and Blue. Which do you open? ").lower()
+        if  door == "yellow":
+            print("Congratulations! You found the treasure")   
+        else:
+            print("There was a lion behind the door. Game over.")

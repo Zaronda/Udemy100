@@ -1,0 +1,14 @@
+# functions with outputs
+
+def format_name(f_name, l_name):
+    if f_name == "" or l_name == "":
+        return "You didn't provide valid inputs."
+    title_first = f_name.title()
+    title_last = l_name.title()
+
+
+    return f"{title_first} {title_last}"
+
+# formated_string = format_name("JANE", "sPeaKMAn")
+
+print(format_name(input("What is your first name? "), input("What is your last name? ")))

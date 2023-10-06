@@ -1,0 +1,23 @@
+year = int(input("Which year do you want to check? "))
+# set variable to false
+leap_year = False
+# a year divisible by 4 is a leap year
+# except if it is evenly divisible by 100
+# unless it is divisble by 400
+# is year divisble evenly by 4?
+remainder = year % 4 
+if remainder == 0:
+    leap_year = True
+    remainder = year % 100
+    if remainder == 0:
+        leap_year = False
+        remainder = year % 400
+        if remainder == 0:
+            leap_year = True
+#
+if leap_year == False:
+    print(f"Not a leap year") 
+else:
+    print("Is a leap year.") 
+
+

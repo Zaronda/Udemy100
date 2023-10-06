@@ -1,0 +1,30 @@
+import turtle as t
+import random
+t.colormode(255)
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    random_color = (r, g, b)
+    return random_color
+
+colors = ["purple", "CornflowerBlue", "IndianRed", "SeaGreen", "DarkOrchid", "DeepSkyBlue", "LightSeaGreen"]
+
+tom = t.Turtle()
+tom.shape("turtle")
+tom.pencolor("purple4")
+#tom.color("purple4")
+tom.color(random_color())
+tom.pensize(3)
+
+def draw_line():
+        for _ in range(200):
+#            length = random.choice(1,15)
+            length = 30
+            angle = 360/random.randint(1, 360)
+            tom.color(random.choice[colors])
+            tom.forward(length)
+            tom.right(angle)
+
+draw_line()
