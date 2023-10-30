@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css" >
+            body{
+/*                 background-image: url("./images/wood-texture-bg.jpg"); */
+                background-image: url("./images/red-wallpaper-200.jpg");
+                overflow: none;
+            }
+           
+            .chrome {
+	/*
+	                background-image: url("./images/iphone2.png");
+	                background-repeat: no-repeat;
+	*/
+/*
+                width: 394px;
+                height: 790px;
+                background-size: cover;
+                margin: 100px auto;
+                position: relative;
+*/
+            }
+            .chrome {
+	            max-width: 90%;
+                max-width: 800px;
+/*                 height: 948px; */
+                margin: 120px auto;
+                color: white;
+                
+                text-align: center;
+                margin: 50px auto;
+
+            }
+            
+            h1 {
+	            font-size: 7vh;
+            }
+            
+            h2 {
+	            font-size: 20vh;
+	            margin-top: 0.5em;
+            }
+            
+            .img-container {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+	        	margin: 0 auto;
+	        	width: 100vw;
+	        	text-align: center;
+	        	z-index: 0;
+	        	height: 25vh;
+	        	max-height: 400px
+            }
+            
+            img {
+	            max-width: 1000px;
+	            display: inline-block;
+				position:absolute;
+	        	bottom: 0;   
+	        	left: calc(50% - 10px); 
+	        	transform: translate(-50%,25%);
+            }
+            
+            blink {
+			  animation: 2s linear infinite condemned_blink_effect;
+			}
+			
+			@keyframes condemned_blink_effect {
+			  0% {
+			    visibility: hidden;
+			  }
+			  50% {
+			    visibility: hidden;
+			  }
+			  100% {
+			    visibility: visible;
+			  }
+			}
+
+			.chrome .turq {
+				color: #6bbbb0;
+			}
+				
+			.chrome .yell {
+				color: #d7d859;
+			}
+			
+			.chrome .pink {
+				color: #bc7192;
+			}
+			
+			.chrome .blue {
+				color: #498fee;
+			}
+
+
+        </style>
+    </head>
+<body>
+    <div class="chrome"><h1><span class="turq">I</span><span class="yell">s</span> <span class="pink">t</span><span class="blue">o</span><span class="turq">d</span><span class="yell">a</span><span class="pink">y</span> <span class="blue">t</span><span class="turq">h</span><span class="yell">e</span> <span class="pink">T</span><span class="blue">a</span><span class="turq">s</span><span class="yell">k</span><span class="pink">m</span><span class="blue">a</span><span class="turq">s</span><span class="yell">t</span><span class="pink">e</span><span class="blue">r'</span><span class="turq">s</span> <span class="yell">b</span><span class="pink">i</span><span class="blue">r</span><span class="turq">t</span><span class="yell">h</span><span class="pink">d</span><span class="blue">a</span><span class="turq">y</span><span class="yell">?</span></h1>
+    	<h2><blink>NO</blink></h2>
+    </div>
+    	<div class="img-container">
+			<img src="images/unlit-candles.png" />
+    	</div>
+</body>
+<script type="text/javascript">
+
+
+
+var date = new Date('2023-05-14');
+
+mydate=new Date('2023-05-14');
+console.log(date);
+console.log(mydate)
+
+/*
+if(date>mydate)
+{
+    alert("greater");
+}
+else
+{
+    alert("smaller")
+}
+*/
+
+</script>
+
+</html>
+
+
+
