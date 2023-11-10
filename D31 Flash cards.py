@@ -1,7 +1,7 @@
 from tkinter import *
 import pandas as pd
 
-data = pd.read_csv("D31_spanish_words.csv")
+data = pd.read_csv("D31_spanish_words_cut.csv")
 print(data)
 to_learn = data.to_dict()
 print(to_learn)
